@@ -1,0 +1,22 @@
+{
+  "name": "candidate_group_project",
+  "version": "1.0.0",
+  "description": "rigged election RIP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Nick + Dave",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.6",
+    "bootstrap": "^3.3.5",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-uglify": "^0.9.2"
+  }
+}

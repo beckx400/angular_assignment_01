@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+body{
+    font-family: 'Patrick Hand SC', sans-serif;
+}
+button{
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 2px 2px darkgray;
+    font-size: 25px;
+    cursor: pointer;
+}
+body{
+    background: url("../assets/images/flag.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding: none;
+    margin: none;
+}
+h1{
+    margin-top:0;
+}
+.reps, .dems {
+    color: white;
+    font-size: 30px;
+}
+.reps{
+    background-color: red;
+}
+.dems{
+    background-color: blue;
+}
+.jumbotron, .winner-div{
+    text-align: center;
+    background-color: white;
+}
+.jumbotron{
+    padding: 5px 0;
+}
+.row{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.winner-div {
+    padding: 20px 0;
+    font-size: 50px;
+}
+#load{
+    border: 2px solid red;
+}
+#begin{
+    border: 2px solid blue;
+}

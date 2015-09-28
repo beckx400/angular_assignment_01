@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Electoral Randomizer</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link href="/vendor/bootstrap/dist/css/bootstrap.css.map">
+    <link rel="stylesheet" href="/views/style.css">
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/vendor/angular/angular.min.js.map"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+</head>
+<body>
+    <!--<div ng-controller="IndexController">-->
+        <!--<button ng-click="loadCandidates()">Load Candidatos</button>-->
+        <!--<button ng-click="vote()">Begin Election!</button>-->
+        <!--<div class="winner" ng-show="winner">{{winner}}</div>-->
+        <!--<div class="reps">-->
+            <!--<ul>-->
+                <!--<li ng-repeat="cand in candidates.republicans track by $index">{{cand.name}} - {{cand.votes}}</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <!--<div class="dems">-->
+            <!--<ul>-->
+                <!--<li ng-repeat="cand in candidates.democrats">{{cand.name}} - {{cand.votes}}</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div ng-controller="IndexController">
+    <div class="jumbotron">
+        <img src="../assets/images/eagle.gif" alt="eagle" height="60px" width="60px">
+        <h1>Voting Machine!</h1>
+    </div>
+    ​
+    <div class="row">
+        <div class="container">
+            <button id="load"class="col-md-4" ng-click="loadCandidates()">&#9734Load Candidates</button>
+            <div class="col-md-4"></div>
+            <button id="begin"class="col-md-4" ng-click="vote()">&#9733Begin Election!</button>
+        </div>
+    </div>
+    ​
+    <div class="row">
+        <div class="col-md-6 reps">
+            <ul>
+                <li><h2>Republicans</h2></li>
+                <li ng-repeat="cand in candidates.republicans">{{cand.name}} - {{cand.votes}}</li>
+            </ul>
+        </div>
+        <div class="col-md-6 dems">
+            <ul>
+                <li><h2>Democrats</h2></li>
+                <li ng-repeat="cand in candidates.democrats">{{cand.name}} - {{cand.votes}}</li>
+            </ul>
+        </div>
+    </div>
+    ​
+    <div class="winner-div row">
+        <div class="col-md-12" class="winner" ng-show="winner">&#9734&#9733&#9734{{winner}}&#9734&#9733&#9734</div>
+    </div>
+    ​
+    </div>
+</body>
+</html>
